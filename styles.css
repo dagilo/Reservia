@@ -1,0 +1,70 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+}
+
+.container-fluid {
+  width: 100%;
+  margin: auto;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Navigation */
+
+.inscription {
+  color: #0065fc;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 2rem;
+  padding-top: 1rem;
+}
+
+.inscription, a:hover {
+  text-decoration: none;
+}
+
+.menunav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 2rem;
+  padding-top: 2rem;
+}
+
+nav a {
+  font-size:1em;
+  color: #404040;
+}
+
+nav a:hover {
+  color: #0065fc;
+  border-top: solid #0065fc;
+  text-decoration: none;
+  padding-top: 2rem;
+}
+
+h2 {
+  font-size: 1.5em;
+}

@@ -78,15 +78,15 @@ header {
 }
 
 nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-  }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
 
 .menunav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -115,7 +115,75 @@ nav a:hover {
 /* Pour les écrans plus petits */
 
 @media screen and (max-width: 576px) {
+  header {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
+  .logo {
+    position: relative;
+    top: 10px;
+  }
+
+  .menunav {
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .navbar {
+    display: flex;
+    width: 100%;
+  }
+
+  nav ul {
+    justify-content: space-around;
+    padding: 0 2rem 0 2rem;
+    width: 100%;
+  }
+
+  nav li {
+    margin: 0;
+    padding: 0;
+  }
+
+  .menuInscription {
+    display: flex;
+    order: -1;
+  }
+
+  .inscription {
+    color: #0065fc;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -20px;
+    left: 130px;
+  }
+
+  .inscription a:hover {
+    text-decoration: none;
+  }
+
+  nav a {
+    font-size:1em;
+    color: #404040;
+    border-top: none;
+    border-bottom: 3px solid #F2F2F2;
+    width: 50%;
+  }
+
+  nav a:hover {
+    color: #0065fc;
+    border-top: hidden;
+    text-decoration: none;
+    padding: 2rem;
+    border-bottom-color: #0065FC;
+  }
+}
 
 /* Moteur de recherche */
 
@@ -514,7 +582,7 @@ nav a:hover {
   display: block;
 }
 
-.activitiesCard1, .activitiesCard2 {
+.activitiesCard1, .activitiesCard2, .activitiesCard3, .activitiesCard4 {
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -571,6 +639,26 @@ nav a:hover {
     width: 100%;
     height: 48%;
     margin: 0;
+  }
+
+  .activitiesCard3 {
+    width: 100%;
+    height: 58%;
+    margin: 0;
+  }
+
+  #pomegues img {
+    max-height: 200px;
+  }
+
+   .activitiesCard4 {
+    width: 100%;
+    height: 38%;
+    margin: 0;
+  }
+
+  #frioul img {
+    max-height: 107px;
   }
 
   .activitiesCardImg1 {

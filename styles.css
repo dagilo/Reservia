@@ -114,23 +114,8 @@ nav a:hover {
 
 /* Pour les écrans plus petits */
 
-@media screen and (max-width: 768px) {
-  header {
-    display: flex;
-    flex-wrap: wrap;
-  }
+@media screen and (max-width: 576px) {
 
-  .navbar {
-    display: flex;
-    justify-content: center;
-  }
-
-  .inscription {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-  }
-}
 
 /* Moteur de recherche */
 
@@ -288,7 +273,7 @@ nav a:hover {
   background-color: #f2f2f2;
   padding: 2rem;
   border-radius: 1.5rem;
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
 .hostingTitle {
@@ -299,6 +284,7 @@ nav a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 100%;
 }
 
 .anotherCard {
@@ -320,7 +306,7 @@ nav a:hover {
 .anotherCardImg {
   height: 7rem;
   object-fit: cover;
-  max-width: 100%;
+  max-width: 490px;
   width: 100%;
   max-height: 100%;
   border-radius: 1rem 1rem 0 0;
@@ -354,6 +340,11 @@ nav a:hover {
   color: #000000;
 }
 
+.popularMain {
+    width: 100%;
+    max-width: 540px;
+  }
+
 .popularTitle {
   margin: 0;
   display: flex;
@@ -376,6 +367,7 @@ nav a:hover {
   display: flex;
   align-items: stretch;
   height: 100%;
+  width: 100%;
   overflow: auto;
 }
 
@@ -393,6 +385,7 @@ nav a:hover {
   min-width: 100%;
   max-width: 100%;
   object-fit: cover;
+  height: 100%;
 }
 
 .cardContainer {
@@ -400,7 +393,60 @@ nav a:hover {
   flex-direction: column;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
+  .hostingPopularWrap{
+    display:flex;
+  }
+
+  .hosting {
+    display:flex;
+    flex: 2;
+    order: -1;
+  }
+
+  .popular {
+    display:flex;
+    flex: 1;
+  }
+
+  .hostingMainCards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:auto;
+    margin-right:auto;
+    justify-content:space-between;
+    align-items:center;
+    align-content:center;
+  }
+
+  .popularMainCards {
+    display: flex;
+    flex-direction: column;
+    margin-left:auto;
+    margin-right:auto;
+    justify-content:space-between;
+    align-items:center;
+    align-content:center;
+    height: 90%;
+  }
+
+  .anotherCard {
+    display: flex;
+    flex-wrap: wrap;
+    width: 43%;
+    font-size: 0.8rem;
+  }
+
+  .Card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 0.8rem;
+    height: 33%;
+  }
+}
+
+@media screen and (min-width: 1275px) {
   .hostingPopularWrap{
     display:flex;
   }
@@ -427,6 +473,10 @@ nav a:hover {
     align-content:center;
   }
 
+  .popularMain {
+    width: 100%;
+  }
+
   .popularMainCards {
     display: flex;
     flex-direction: column;
@@ -435,12 +485,13 @@ nav a:hover {
     justify-content:space-between;
     align-items:center;
     align-content:center;
+    height: 90%;
   }
 
   .anotherCard {
     display: flex;
     flex-wrap: wrap;
-    width: 27%;
+    width: 28%;
     font-size: 0.8rem;
   }
 
@@ -455,11 +506,15 @@ nav a:hover {
 
 /* Section Activités */
 
+.activitiesWrapper {
+  margin-bottom: 1rem;
+}
+
 .activitiesMain {
   display: block;
 }
 
-.activitiesCard {
+.activitiesCard1, .activitiesCard2 {
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -469,61 +524,74 @@ nav a:hover {
   margin: 1rem;
 }
 
-.activitiesCardImg {
+.activitiesCardImg1, .activitiesCardImg2 {
   border-radius: 1.25rem 1.25rem 0 0;
   width: 100%;
   height: auto;
   justify-content: center;
   object-fit: cover;
-  max-height: 150px;
+  max-height: 300px;
+}
+
+.activitiesMain img {
+  height: 500px;
 }
 
 .activitiesText {
   display: flex;
   align-items: center;
-  margin: 1rem;
+  margin: 0.5rem;
   font-size: 1rem;
 }
 
 @media screen and (min-width: 768px) {
   .activitiesMain {
-    display:flex;
-    flex-wrap:wrap;
-    width:100%;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    width: 97%;
+    height: 100%;
+    margin:0.5rem;
     align-items: center;
     align-content: center;
-    height: 100%;
   }
 
-  .activitiesCard {
-    width:22%;
-    margin-bottom:1rem;
-    margin-top:1rem;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-  }
-
-  #vieuxPort, #calanques {
+  .activitiesCard1 {
     display: flex;
-    flex-wrap: wrap;
-    height: 100%;
+    width: 21%;
+    height: 425px;
   }
 
-  #pomegue, #frioul, #garde, #longchamp {
-    display: flex;
-    flex-wrap: wrap;
-    height: 50%;
+  .doublebloc {
+    width: 22%;
+    height: 425px;
+  }
+
+  .activitiesCard2 {
+    width: 100%;
+    height: 48%;
+    margin: 0;
+  }
+
+  .activitiesCardImg1 {
+    max-height: 370px
+  }
+
+  .activitiesCardImg2 {
+    max-height: 150px;
+    width: 100%;
+  }
+
+  #pomegues, #garde {
+    margin-bottom: 1rem;
   }
 
   .activitiesText {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     font-size: 0.8rem;
+    width: 100%;
+    align-items: center;
   }
 }
 
@@ -556,16 +624,28 @@ footer ul {
 
 .a_propos {
   display: block;
-  padding : 2rem 2rem;
+  padding : 1rem 1rem;
 }
 
 .nos_hebergements {
   display: block;
-  padding : 2rem 2rem;
+  padding : 1rem 1rem;
 }
 
 .assistance {
   display: block;
-  padding : 2rem 2rem;
+  padding : 1rem 1rem;
 }
 
+@media screen and (min-width: 768px) {
+  .footerWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .a_propos, .nos_hebergements, .assistance {
+    width: 30%;
+  }
+}

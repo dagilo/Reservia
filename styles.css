@@ -138,6 +138,7 @@ nav a:hover {
 
   nav ul {
     justify-content: space-around;
+    list-style-type: none;
     padding: 0 2rem 0 2rem;
     width: 100%;
   }
@@ -172,7 +173,6 @@ nav a:hover {
     font-size:1em;
     color: #404040;
     border-top: none;
-    border-bottom: 3px solid #F2F2F2;
     width: 50%;
   }
 
@@ -180,8 +180,8 @@ nav a:hover {
     color: #0065fc;
     border-top: hidden;
     text-decoration: none;
-    padding: 2rem;
-    border-bottom-color: #0065FC;
+    padding: 1rem;
+    border-bottom: 3px solid #0065FC;
   }
 }
 

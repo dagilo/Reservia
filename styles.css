@@ -70,7 +70,7 @@ header {
   justify-content: flex-end;
   align-items: center;
   margin-right: 2rem;
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 
 .inscription, a:hover {
@@ -472,6 +472,28 @@ nav a:hover {
   display:flex;
   flex-direction: column;
   width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+  .hosting, .popular {
+    padding: 1rem;
+  }
+
+  .cardContainer {
+  display:flex;
+  flex-direction: column;
+  width: 70%;
+  }
+
+  .cardImage {
+  position: relative;
+  min-height: 100%;
+  width: 30%;
+  }
+
+  h4, p, .cardNotation {
+    font-size: 0.9rem;
+  }
 }
 
 @media screen and (min-width: 700px){

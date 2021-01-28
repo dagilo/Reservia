@@ -1,7 +1,11 @@
 body {
   font-family: 'Raleway', sans-serif;
   color : #000000;
-  width: 100vw;
+  width: 98%;
+}
+
+.container-fluid {
+  width: 100%;
 }
 
 a {
@@ -11,11 +15,6 @@ a {
 
 p{
   color: #606060;
-}
-
-.container-fluid {
-  width: 100%;
-  margin: auto;
 }
 
 h2 {
@@ -53,6 +52,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  max-width: 98%;
 }
 
 .logo {
@@ -69,7 +69,7 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-right: 2rem;
+  margin-right: 3rem;
   padding-top: 2rem;
 }
 
@@ -166,7 +166,7 @@ nav a:hover {
     padding: 0;
     position: relative;
     top: -20px;
-    left: 130px;
+    left: 150px;
   }
 
   .inscription a:hover {
@@ -196,7 +196,7 @@ nav a:hover {
 /* Moteur de recherche */
 
 .main {
-  max-width: 1440px;
+  max-width: 98%;
   margin: auto;
   padding: 0 2rem;
   box-sizing: border-box;
@@ -622,6 +622,7 @@ nav a:hover {
 
 .activitiesMain {
   display: block;
+  max-width: 98%;
 }
 
 .activitiesCard1, .activitiesCard2, .activitiesCard3, .activitiesCard4 {
@@ -734,10 +735,8 @@ nav a:hover {
 }
 
 .footerWrapper {
-  max-width : 100%;
-  width : 1440px;
-  margin: auto;
-  padding: 0 2rem;
+  max-width : 98%;
+  padding: 1rem;
 }
 
 footer h3 {
@@ -772,7 +771,7 @@ footer ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
+    width: 98%;
   }
 
   .a_propos, .nos_hebergements, .assistance {
